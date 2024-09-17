@@ -1,89 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netlify AI bot control example</title>
-  <link rel="preload" href="https://example-styles.netlify.app/fonts/PacaembuVar-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="https://example-styles.netlify.app/fonts/MulishVar-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="https://example-styles.netlify.app/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Home</title>
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="https://www.netlify.com/">
-        <img src="https://example-styles.netlify.app/images/logo-netlify-small-monochrome-darkmode.svg" alt="Netlify" class="nf-logo">
-      </a>
-      <ul>
-        <li>Active page</li>
-        <li><a href="/">Navigation</a></li>
-      </ul>
-    </nav>
-    <section>
-      <h1>Example — no AI crawlers</h1>
-      <p>This site disallows AI crawler bots</p>
-    </section>
-  </header>
-  <main>
-    <section>
-      <h2></h2>
-    </section>
-  </main>
-  <footer>
-    <div class="flex-btwn">
-      <a href="https://www.netlify.com/"><img src="https://example-styles.netlify.app//images/logo-netlify-small-monochrome-lightmode.svg" class="nf-logo" alt="Netlify logo"></a>
-      <div class="social-icons">
-        <a href="https://youtube.com/Netlify"><img src="https://example-styles.netlify.app/icons/youtube.svg" alt="YouTube"></a>
-        <a href="https://github.com/netlify/examples"><img src="https://example-styles.netlify.app/icons/github.svg" alt="GitHub"></a>
-        <a href="https://x.com/Netlify"><img src="https://example-styles.netlify.app/icons/twitter.svg" alt="X"></a>
-        <a href="https://linkedin.com/company/Netlify"><img src="https://example-styles.netlify.app/icons/linkedin.svg" alt="LinkedIn"></a>
-        <a href="https://answers.netlify.com"><img src="https://example-styles.netlify.app/icons/discourse.svg" alt="Netlify Answers"></a>
-      </div>
-    </div>
-    <div class="links-container">
-      <section>
-        <h3>Developers</h3>
-        <ul role="list">
-          <li><a href="https://developers.netlify.com/">Netlify Developers</a></li>
-          <li><a href="https://developers.netlify.com/sdk/">Netlify SDK</a></li>
-          <li><a href="https://developers.netlify.com/cli/">Netlify CLI</a></li>
-          <li><a href="https://developers.netlify.com/feed/">Activity Feed</a></li>
-          <li><a href="https://docs.netlify.com">Documentation</a></li>
-          <li><a href="https://netlify.com/conference/">Compose Conference</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Company</h3>
-        <ul role="list">
-          <li><a href="https://netlify.com/blog/">Blog</a></li>
-          <li><a href="https://netlify.com/about/">About</a></li>
-          <li><a href="https://netlify.com/careers/">Careers</a></li>
-          <li><a href="https://netlify.com/press/">Press</a></li>
-          <li><a href="https://swag.netlify.com/">Netlify Store</a></li>
-          <li><a href="https://netlify.com/sustainability/">Sustainability</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Contact Us</h3>
-        <ul role="list">
-          <li><a href="https://netlify.com/enterprise/contact/">Sales</a></li>
-          <li><a href="https://netlify.com/support/">Support</a></li>
-          <li><a href="https://netlifystatus.com/">Status</a></li>
-          <li><a href="https://answers.netlify.com/">Forums</a></li>
-          <li><a href="https://netlify.com/agency-directory/">Hire an Agency</a></li>
-        </ul>
-      </section>
-    </div>
-    <small>
-      <ul>
-        <li><a href="https://netlify.com/trust-center/">Trust Center</a></li>
-        <li><a href="https://netlify.com/privacy/">Privacy</a></li>
-        <li><a href="https://netlify.com/security/">Security</a></li>
-        <li><a href="https://netlify.com/gdpr-ccpa/">GDPR/CCPA</a></li>
-        <li><a href="mailto:fraud@netlify.com?subject=Abuse%20report&body=Please%20include%20the%20site%20URL%20and%20reason%20for%20your%20report%2C%20and%20we%20will%20reply%20promptly.">Abuse</a></li>
-        </ul>
-        <div>© 2024 Netlify</div>
-      </small>
+
+<body class="bg-zinc-200 min-h-screen flex flex-col">
+    <header>
+        <div class="text-center text-4xl mt-4 underline underline-offset-8 decoration-indigo-500">
+            Frontend Mentor
+        </div>
+    </header>
+    <main>
+        <div class="container max-w-7xl pt-16 mx-auto">
+            <div class="grid md:grid-flow-col gap-8 px-4">
+                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
+                        src="images/fylo.png" class="group-hover:scale-110 duration-200" alt="">
+                    <p
+                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                        Fylo dark theme landing page
+                    </p>
+                    <button
+                        class="bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500">
+                        <a href="fylo/index.html">Zobacz projekt</a>
+                    </button>
+                </div>
+                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
+                        src="images/clipboard.png" class="group-hover:scale-110 duration-200" alt="">
+                    <p
+                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                        Clipboard landing page
+                    </p>
+                    <button
+                        class="bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500">
+                        <a href="clipboard/index.html">Zobacz projekt</a>
+                    </button>
+                </div>
+                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
+                        src="images/loopstudio.png" class="group-hover:scale-110 duration-200" alt="">
+                    <p
+                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                        Loopstudios landing page
+                    </p>
+                    <button
+                        class="bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500">
+                        <a href="loopstudios/index.html">Zobacz projekt</a>
+                    </button>
+                </div>
+            </div>
+            <div class="grid md:grid-flow-col gap-8 px-4 pt-10">
+                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
+                        src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
+                    <p
+                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                        Lorem ipsum
+                    </p>
+                    <button disabled
+                        class="cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500">
+                        Zobacz projekt
+                    </button>
+                </div>
+                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
+                        src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
+                    <p
+                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                        Lorem ipsum
+                    </p>
+                    <button disabled
+                        class="cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500">
+                        Zobacz projekt
+                    </button>
+                </div>
+                <div class="mx-auto group transition-all flex flex-col items-center justify-center ">
+                    <img src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
+                    <p
+                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                        Lorem ipsum
+                    </p>
+                    <button disabled
+                        class="cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500">
+                        Zobacz projekt
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-6">
+        <div class="flex flex-col md:flex-row justify-between items-center px-6 pb-2">
+            <div class="hover:cursor-pointer">
+                <a href="https://github.com/KacperRodzoch" target="_blank" class="cursor-pointer">
+                    <img src="images/github.png" alt="" class="max-w-16 cursor-pointer hover:scale-110 duration-300">
+                </a>
+            </div>
+            <div class="py-4">Kacper Rodzoch 2024&reg;</div>
+        </div>
     </footer>
 </body>
+
 </html>
