@@ -10,92 +10,96 @@
 
 <body class="bg-zinc-200 min-h-screen flex flex-col">
     <header>
-        <div class="text-center text-4xl mt-4 underline underline-offset-8 decoration-indigo-500">
-            Frontend Mentor
+        <div class="flex md:flex-row flex-col justify-center items-center">
+            <div>
+                <img src="./images/logo.png" alt="Kacper logo" class="max-w-44 px-8 pt-6">
+            </div>
+            <p class="font-semibold mt-4 text-4xl md:text-6xl relative three cursor-default">
+                <span class="px-1">Kacper Project's</span>
+                <span class="absolute left-0 -bottom-3 w-full h-1 transition-all bg-yellow-400"
+                    style="z-index: -9;"></span>
+            </p>
         </div>
     </header>
     <main>
-        <div class="container max-w-7xl pt-16 mx-auto">
-            <div class="grid md:grid-flow-col gap-8 px-4">
-                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
-                        src="images/fylo.png" class="group-hover:scale-110 duration-200" alt="">
-                    <p
-                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
-                        Fylo dark theme landing page
+        <div class="container max-w-screen-xl pt-16 mx-auto">
+            <div class="text-center text-3xl pb-8 underline underline-offset-8 decoration-indigo-500 cursor-default">
+                Landing Pages
+            </div>
+            <div class="grid md:grid-flow-col gap-8 px-4 pb-10">
+                <div class="cardContainer group"><img src="images/fylo.png" class="group-hover:scale-110 duration-200"
+                        alt="">
+                    <p class="cardFont">
+                        Fylo dark theme landing&nbsp;page
                     </p>
-                    <button
-                        class="bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500">
+                    <button class="btnActive">
                         <a href="fylo/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
-                        src="images/clipboard.png" class="group-hover:scale-110 duration-200" alt="">
-                    <p
-                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                <div class="cardContainer group"><img src="images/clipboard.png"
+                        class="group-hover:scale-110 duration-200" alt="">
+                    <p class="cardFont">
                         Clipboard landing page
                     </p>
-                    <button
-                        class="bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500">
+                    <button class="btnActive">
                         <a href="clipboard/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
-                        src="images/loopstudio.png" class="group-hover:scale-110 duration-200" alt="">
-                    <p
-                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                <div class="cardContainer group"><img src="images/loopstudio.png"
+                        class="group-hover:scale-110 duration-200" alt="">
+                    <p class="cardFont">
                         Loopstudios landing page
                     </p>
-                    <button
-                        class="bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500">
+                    <button class="btnActive">
                         <a href="loopstudios/index.html">Zobacz projekt</a>
                     </button>
                 </div>
             </div>
-            <div class="grid md:grid-flow-col gap-8 px-4 pt-10">
-                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
-                        src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
-                    <p
-                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
-                        Lorem ipsum
+            <div class="text-center text-3xl pb-8 underline underline-offset-8 decoration-indigo-500 cursor-default">
+                Mini Projects
+            </div>
+            <div class="grid md:grid-flow-col gap-8 px-4">
+                <div class="cardContainer group"><img src="images/product-modal.png"
+                        class="group-hover:scale-110 duration-200" alt="">
+                    <p class="cardFont">
+                        Product modal
                     </p>
-                    <button disabled
-                        class="cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500">
-                        Zobacz projekt
+                    <button class="btnActive">
+                        <a href="product-modal/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="mx-auto group transition-all flex flex-col items-center justify-center"><img
-                        src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
-                    <p
-                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
-                        Lorem ipsum
+                <div class="cardContainer group"><img src="images/login-modal.png"
+                        class="group-hover:scale-110 duration-200" alt="">
+                    <p class="cardFont">
+                        Log in modal
                     </p>
-                    <button disabled
-                        class="cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500">
-                        Zobacz projekt
+                    <button class="btnActive">
+                        <a href="login-modal/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="mx-auto group transition-all flex flex-col items-center justify-center ">
+                <div class="cardContainer group ">
                     <img src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
-                    <p
-                        class="pt-2 pb-4 text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500">
+                    <p class="cardFont">
                         Lorem ipsum
                     </p>
-                    <button disabled
-                        class="cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500">
+                    <button disabled class="btnInactive">
                         Zobacz projekt
                     </button>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="mt-6">
+    <footer class="mt-10">
         <div class="flex flex-col md:flex-row justify-between items-center px-6 pb-2">
             <div class="hover:cursor-pointer">
                 <a href="https://github.com/KacperRodzoch" target="_blank" class="cursor-pointer">
                     <img src="images/github.png" alt="" class="max-w-16 cursor-pointer hover:scale-110 duration-300">
                 </a>
             </div>
-            <div class="py-4">Kacper Rodzoch 2024&reg;</div>
+            <div class="text-center md:text-right py-4 cursor-default">Kacper Rodzoch 2024&reg;
+                <p class="text-xxs">All designs are from <a href="https://www.frontendmentor.io/" target="_blank"
+                        class="hover:text-indigo-600 duration-200">www.frontendmentor.io</a></p>
+            </div>
         </div>
     </footer>
 </body>

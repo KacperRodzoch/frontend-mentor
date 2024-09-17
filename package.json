@@ -4,7 +4,8 @@
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
-    "watch": "npx tailwindcss -i ./www/input.css -o ./www/output.css --watch"
+    "watch": "tailwindcss -i ./www/input.css -o ./www/output.css --watch",
+    "build-css": "tailwindcss build -i ./www/input.css -o ./www/output.css"
   },
   "license": "ISC",
   "dependencies": {
