@@ -15,7 +15,7 @@
 }
 
 .cardImage {
-  @apply group-hover:scale-110 duration-500 max-w-72 md:max-w-full;
+  @apply group-hover:scale-110 duration-500 max-w-72 md:max-w-full rounded-xl;
 }
 
 .cardContainer {

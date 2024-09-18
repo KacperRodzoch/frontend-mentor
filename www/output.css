@@ -845,6 +845,7 @@ video {
 
 .cardImage {
   max-width: 18rem;
+  border-radius: 0.75rem;
   transition-duration: 500ms;
 }
 
@@ -932,11 +933,6 @@ video {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:text-indigo-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .hover\:text-yellow-400:hover {
