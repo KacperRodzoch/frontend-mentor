@@ -3,21 +3,34 @@
 @tailwind utilities;
 
 .btnActive {
-  @apply bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-indigo-600 group-hover:text-white duration-500;
+  @apply bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-150 group-hover:bg-yellow-400 group-hover:text-white duration-500;
 }
 
 .btnInactive {
-  @apply cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:scale-90 group-hover:bg-red-600 group-hover:text-white duration-500;
+  @apply cursor-not-allowed bg-slate-400 py-2 px-6 rounded-xl group-hover:bg-red-600 group-hover:text-white duration-500;
 }
 
 .cardFont {
-  @apply pt-2 pb-4 text-xl md:text-[16px] lg:text-xl group-hover:pt-6 group-hover:text-indigo-600 group-hover:font-medium duration-500 cursor-default;
+  @apply pt-2 pb-4 text-lg md:text-[14px] lg:text-base xl:text-xl group-hover:pt-6 group-hover:text-yellow-400 group-hover:font-medium duration-500 cursor-default;
+}
+
+.cardImage {
+  @apply group-hover:scale-110 duration-500 max-w-72 md:max-w-full;
 }
 
 .cardContainer {
   @apply mx-auto transition-all flex flex-col items-center justify-center;
 }
 
-.three:hover span {
+.sectionContainer {
+  @apply grid md:grid-flow-col gap-8 px-4 space-y-6 md:space-y-0;
+}
+
+.cardHeader {
+  @apply text-center text-2xl md:text-3xl font-medium underline underline-offset-8 decoration-yellow-400 cursor-default pb-8;
+}
+
+.animateHeader span {
   height: 140%;
+  transition: all 1.5s ease;
 }

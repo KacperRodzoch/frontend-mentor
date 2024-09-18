@@ -8,7 +8,11 @@ module.exports = {
       },
       fontSize: {
         xxs: '0.625rem',
-      }
+      },
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+        Matemasie: ["Matemasie", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -4,31 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/www/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="output.css">
-    <title>Home</title>
+    <title>Kacper Project's - Frontend Mentor 👨‍💻</title>
 </head>
 
-<body class="bg-zinc-200 min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col text-white font-Poppins bg-[url('./images/bg.jpg')]">
     <header>
         <div class="flex md:flex-row flex-col justify-center items-center">
             <div>
                 <img src="./images/logo.png" alt="Kacper logo" class="max-w-44 px-8 pt-6">
             </div>
-            <p class="font-semibold mt-4 text-4xl md:text-6xl relative three cursor-default">
+            <p id="mainParagraph"
+                class="font-semibold text-black font-Matemasie mt-4 text-3xl min-[375px]:text-4xl md:text-6xl relative cursor-default">
                 <span class="px-1">Kacper Project's</span>
-                <span class="absolute left-0 -bottom-3 w-full h-1 transition-all bg-yellow-400"
+                <span class="absolute left-0 -bottom-3 md:-bottom-5 w-full h-1 transition-all bg-yellow-400"
                     style="z-index: -9;"></span>
             </p>
         </div>
     </header>
     <main>
-        <div class="container max-w-screen-xl pt-16 mx-auto">
-            <div class="text-center text-3xl pb-8 underline underline-offset-8 decoration-indigo-500 cursor-default">
+        <div class="container max-w-screen-xl pt-16 md:pt-28 mx-auto">
+            <div class="cardHeader">
                 Landing Pages
             </div>
-            <div class="grid md:grid-flow-col gap-8 px-4 pb-10">
-                <div class="cardContainer group"><img src="images/fylo.png" class="group-hover:scale-110 duration-200"
-                        alt="">
+            <div class="sectionContainer pb-10">
+                <div class="cardContainer group"><img src="images/fylo.png" class="cardImage" alt="">
                     <p class="cardFont">
                         Fylo dark theme landing&nbsp;page
                     </p>
@@ -36,8 +43,7 @@
                         <a href="fylo/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="cardContainer group"><img src="images/clipboard.png"
-                        class="group-hover:scale-110 duration-200" alt="">
+                <div class="cardContainer group"><img src="images/clipboard.png" class="cardImage" alt="">
                     <p class="cardFont">
                         Clipboard landing page
                     </p>
@@ -45,8 +51,7 @@
                         <a href="clipboard/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="cardContainer group"><img src="images/loopstudio.png"
-                        class="group-hover:scale-110 duration-200" alt="">
+                <div class="cardContainer group"><img src="images/loopstudio.png" class="cardImage" alt="">
                     <p class="cardFont">
                         Loopstudios landing page
                     </p>
@@ -55,12 +60,11 @@
                     </button>
                 </div>
             </div>
-            <div class="text-center text-3xl pb-8 underline underline-offset-8 decoration-indigo-500 cursor-default">
+            <div class="pt-10 md:pt-6 cardHeader">
                 Mini Projects
             </div>
-            <div class="grid md:grid-flow-col gap-8 px-4">
-                <div class="cardContainer group"><img src="images/product-modal.png"
-                        class="group-hover:scale-110 duration-200" alt="">
+            <div class="sectionContainer">
+                <div class="cardContainer group"><img src="images/product-modal.png" class="cardImage" alt="">
                     <p class="cardFont">
                         Product modal
                     </p>
@@ -68,8 +72,7 @@
                         <a href="product-modal/index.html">Zobacz projekt</a>
                     </button>
                 </div>
-                <div class="cardContainer group"><img src="images/login-modal.png"
-                        class="group-hover:scale-110 duration-200" alt="">
+                <div class="cardContainer group"><img src="images/login-modal.png" class="cardImage" alt="">
                     <p class="cardFont">
                         Log in modal
                     </p>
@@ -78,7 +81,7 @@
                     </button>
                 </div>
                 <div class="cardContainer group ">
-                    <img src="images/lorem.png" class="group-hover:scale-110 duration-200" alt="">
+                    <img src="images/lorem.png" class="cardImage" alt="">
                     <p class="cardFont">
                         Lorem ipsum
                     </p>
@@ -93,15 +96,28 @@
         <div class="flex flex-col md:flex-row justify-between items-center px-6 pb-2">
             <div class="hover:cursor-pointer">
                 <a href="https://github.com/KacperRodzoch" target="_blank" class="cursor-pointer">
-                    <img src="images/github.png" alt="" class="max-w-16 cursor-pointer hover:scale-110 duration-300">
+                    <img src="images/github-white.png" alt=""
+                        class="max-w-16 cursor-pointer hover:scale-110 duration-300">
                 </a>
             </div>
             <div class="text-center md:text-right py-4 cursor-default">Kacper Rodzoch 2024&reg;
                 <p class="text-xxs">All designs are from <a href="https://www.frontendmentor.io/" target="_blank"
-                        class="hover:text-indigo-600 duration-200">www.frontendmentor.io</a></p>
+                        class="hover:text-yellow-400 duration-200">www.frontendmentor.io</a></p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Funkcja, która dodaje klasę animateHeader do głównego <p>
+        window.onload = function () {
+            setTimeout(function () {
+                const mainParagraph = document.getElementById('mainParagraph');
+                if (mainParagraph) {
+                    mainParagraph.classList.add('animateHeader');
+                }
+            }, 1000); // 1000 milisekund = 1 sekunda
+        };
+    </script>
 </body>
 
 </html>
